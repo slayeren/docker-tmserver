@@ -22,7 +22,7 @@ services:
     ports:
      - "8080:80"
   tmserver:
-    image: fanyx/tmserver:latest
+    image: slayeren/tmserver:latest
     container_name: trackmania_tmserver
     depends_on:
      - db
@@ -45,7 +45,7 @@ services:
      - "3450:3450"
      - "3450:3450/udp"
   xaseco:
-    image: fanyx/xaseco:latest
+    image: slayeren/xaseco:latest
     container_name: trackmania_xaseco
     depends_on:
      - db
