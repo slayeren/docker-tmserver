@@ -28,13 +28,13 @@ services:
      - db
     restart: always
     environment:
-     - SERVER_LOGIN=
-     - SERVER_LOGIN_PASSWORD=
+     - SERVER_LOGIN=flan_server
+     - SERVER_LOGIN_PASSWORD=flan1234
      - SERVER_PORT=2350
      - SERVER_P2P_PORT=3450
      - SERVER_SA_PASSWORD=
      - SERVER_ADM_PASSWORD=
-     - SERVER_NAME=Trackmania Server
+     - SERVER_NAME=Flan 377.0 Trackmania Server
      - SERVER_COMMENT=This is a Trackmania Server
      - SERVER_PASSWORD=
     volumes:
