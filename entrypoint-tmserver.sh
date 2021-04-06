@@ -132,4 +132,6 @@ echo "Substition in config files"
 envsubst < GameData/Config/_config.txt > GameData/Config/config.txt 
 envsubst < $PLAYLIST_FILE_TEMP > GameData/Tracks/MatchSettings/playlist.txt 
 
+echo "Substition done"
+
 exec "./TrackmaniaServer" "/nodaemon" "/internet" "/game_settings=MatchSettings/playlist.txt" "/dedicated_cfg=config.txt"
