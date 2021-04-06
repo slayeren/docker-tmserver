@@ -134,4 +134,4 @@ envsubst < $PLAYLIST_FILE_TEMP > GameData/Tracks/MatchSettings/playlist.txt
 
 echo "Substition done"
 
-exec "./TrackmaniaServer" "/nodaemon" "/internet" "/game_settings=MatchSettings/playlist.txt" "/dedicated_cfg=config.txt"
+exec ./TrackmaniaServer /dedicated_cfg=config.txt /game_settings=MatchSettings/playlist.txt /nodaemon /internet
